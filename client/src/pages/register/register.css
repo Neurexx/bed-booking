@@ -1,0 +1,83 @@
+/* General container for the form */
+.register, .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  /* Container for form inputs */
+  .rContainer, .lContainer {
+    width: 400px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .rInput, .lInput {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .rInput:focus, .lInput:focus {
+    border-color: #007bff;
+  }
+  
+  /* Register and Login button */
+  .rButton, .lButton {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  
+  .rButton:disabled, .lButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .rButton:hover:enabled, .lButton:hover:enabled {
+    background-color: #0056b3;
+  }
+  
+  /* Error message styling */
+  span {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  /* For responsive design on mobile */
+  @media (max-width: 768px) {
+    .rContainer, .lContainer {
+      width: 100%;
+      max-width: 350px;
+      padding: 20px;
+    }
+  
+    .rInput, .lInput {
+      padding: 12px;
+      font-size: 14px;
+    }
+  
+    .rButton, .lButton {
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
+  
